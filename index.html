@@ -19,7 +19,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
-
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -29,10 +33,22 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
+<style>
+    
+    @font-face {
+  font-family: 'Orbit-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+</style>
   
 
   <title>Eunji JO Portfolio</title>
 </head>
+
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
 
@@ -59,8 +75,10 @@
 
         <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
           <li><a href="#home-section" class="nav-link active">Home</a></li>
+          <li><a href="#about-section" class="nav-link">About</a></li>
+          <li><a href="#services-section" class="nav-link">Skill</a></li>
           <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-          <li class="has-children">
+          <!-- <li class="has-children">
             <a href="#about-section" class="nav-link">About</a>
             <ul class="dropdown">
               <li><a href="elements.html" class="nav-link">Elements</a></li>
@@ -74,9 +92,7 @@
               </li>
               <li><a href="#" class="nav-link">Menu Three</a></li>
             </ul>
-          </li>
-          <li><a href="#services-section" class="nav-link">Services</a></li>
-
+          </li> -->
           <li><a href="#contact-section" class="nav-link">Contact us</a></li>
         </ul>
 
@@ -96,7 +112,7 @@
         <div class="col-md-7">
           <h1 class="heading gsap-reveal-hero mb-3"><strong>Eunji JO<span class="text-primary">.</span> Portfolio</strong></h1>
           <h2 class="subheading gsap-reveal-hero mb-4">
-            포기란, 배추 셀 때 쓰는 말이다
+            저는 끊임없이 발전하며, 현재에 만족하지 않고 항상 더 나은 개발자가 되기 위해 최선을 다하겠습니다.
           </h2>
         </div>
       </div>
@@ -107,9 +123,6 @@
 
 <div id="about-section">
 <div class="container">
-  <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
-    <div id="portfolio-single-holder"></div>
-      <div class="portfolio-wrapper">
         <div class="row">
           <div class="item web branding gsap-reveal-hero col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
                 <img src="images/person-jej.jpg" class="lazyload  img-fluid" alt="Images" />
@@ -135,7 +148,7 @@
                   Phone 010-0000-0000
                 </p>
                 <p class="gsap-reveal-hero">
-                  education 구디아카데미 2023-01-06 ~ 2023-06-27
+                  Education 구디아카데미 2023-01-06 ~ 2023-06-27
 
                 </p>       
               </div>
@@ -143,7 +156,7 @@
           </div>
           
         </div>
-      </div>
+
     </div>
 
 
@@ -247,7 +260,7 @@
           </div>
           <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
             <div class="progressbar" data-animate="false">
-              <div class="circle" data-percent="89">
+              <div class="circle" data-percent="95">
                 <div class="number"></div>
                 <p class="caption">BACK-END</p>
               </div>
@@ -255,7 +268,7 @@
           </div>
           <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
             <div class="progressbar" data-animate="false">
-              <div class="circle" data-percent="85">
+              <div class="circle" data-percent="90">
                 <div class="number"></div>
                 <p class="caption">TOOL</p>
               </div>
@@ -283,35 +296,23 @@
               </svg>
             </div>
         </div>
-        <div id="posts" class="row">
+        <div id="posts" class="justify-content-center">
 
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
+
+          <div class="item web branding  isotope-mb-2">
+            <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
               <div class="overlay">
                 <span class="wrap-icon icon-link2"></span>
                 <div class="portfolio-item-content">
-                  <h3>Obsessed Book</h3>
-                  <p>web, branding</p>
+                  <h3>Full Power Salad</h3>
+                  <p>샐러드정기구독홈페이지 중 고객센터(+관리자)</p>
                 </div>
               </div>
-              <img src="images/img_1.jpg" class="lazyload  img-fluid" alt="Images" />
+              <img src="images/fupo.jpg" class="lazyload  img-fluid" alt="Images" />
             </a>
           </div>
 
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Book Binding</h3>
-                  <p>illustration, application</p>
-                </div>
-              </div>
-              <img src="images/img_2.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+          <div class="item web branding  isotope-mb-2">
             <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
               <div class="overlay">
                 <span class="wrap-icon icon-link2"></span>
@@ -324,126 +325,9 @@
             </a>
           </div>
 
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Powerful Speaker</h3>
-                  <p>web, branding</p>
-                </div>
-              </div>
-              <img src="images/img_4.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
 
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Wireless Headset</h3>
-                  <p>web, branding</p>
-                </div>
-              </div>
-              <img src="images/img_5.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Black & White Cubic</h3>
-                  <p>web, branding</p>
-                </div>
-              </div>
-              <img src="images/img_6.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Nike Shoe</h3>
-                  <p>illustration, application</p>
-                </div>
-              </div>
-              <img src="images/img_7.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Old Typewriter</h3>
-                  <p>web, branding</p>
-                </div>
-              </div>
-              <img src="images/img_8.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Walking Man</h3>
-                  <p>web, branding</p>
-                </div>
-              </div>
-              <img src="images/img_9.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Progress Journal</h3>
-                  <p>web, branding</p>
-                </div>
-              </div>
-              <img src="images/img_10.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>The Dog</h3>
-                  <p>web, branding</p>
-                </div>
-              </div>
-              <img src="images/img_11.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Beautiful Woman</h3>
-                  <p>web, branding</p>
-                </div>
-              </div>
-              <img src="images/img_12.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+          <div class="item web branding isotope-mb-2 justify-content-center">
+            <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
               <div class="overlay">
                 <span class="wrap-icon icon-link2"></span>
                 <div class="portfolio-item-content">

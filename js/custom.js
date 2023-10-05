@@ -480,7 +480,7 @@ var portfolioItemClick = function() {
 
 		setTimeout(function() {
 			$('html, body').animate({
-				scrollTop: $('#portfolio-section').offset().top - 50
+				scrollTop: $('#portfolio-section').offset().top +100
 
 			}, 700, 'easeInOutExpo', function() {
 			});
@@ -500,7 +500,7 @@ var portfolioItemClick = function() {
 
 		setTimeout(function(){
 			$('html, body').animate({
-				scrollTop: $('#portfolio-section').offset().top - 50
+				scrollTop: $('#portfolio-section').offset().top + 100
 			}, 700, 'easeInOutExpo');
 		}, 200);
 
