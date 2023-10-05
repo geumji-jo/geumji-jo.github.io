@@ -2,6 +2,20 @@
     Flaticon icon font: Flaticon
     Creation date: 02/08/2020 11:53
     */
+
+    @font-face {
+      font-family: "Orbit-Regular";
+        src: url('./NotoSansKR.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+      unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+    *{
+      font-family:  "Orbit-Regular";
+      unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    }
+
+
 @font-face {
   font-family: "Flaticon";
   src: url("./Flaticon.eot");
