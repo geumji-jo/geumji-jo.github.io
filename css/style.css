@@ -1017,13 +1017,13 @@ figure.dotted-bg {
 
 .detail-v1 .detail-label {
   display: block;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: .1rem; }
 
 .detail-v1 .detail-val {
-  font-size: 16px; }
+  font-size: 18px; }
 
 .position-relative {
   position: relative; }
