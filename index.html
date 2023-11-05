@@ -13,6 +13,8 @@
   <meta name="author" content="Untree.co">
   <!-- <link rel="shortcut icon" href="favicon.png"> -->
 
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
   <meta name="description" content="" />
   <meta name="keywords" content="" />
 
@@ -83,6 +85,7 @@
             </ul>
           </li> 
           <li><a href="#contact-section" class="nav-link">Contact us</a></li>-->
+          <li><a href="#blog-section" class="nav-link">Blog</a></li>
         </ul>
 
         <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block" data-toggle="collapse" data-target="#main-navbar">
@@ -107,6 +110,13 @@
       </div>
     </div>
   </div>
+  <!-- <py-script>
+    GET https://www.tistory.com/apis/post/list?
+    access_token=b1d75e5825bb98791fa25f6d6cc194ae_e93c7ae5461040dd69fd7ee9c365a22b
+    &output=json
+    &blogName=geumji
+    &page=str(i)
+  </py-script>  -->
 
 
 
@@ -452,7 +462,7 @@
     </div>
 -->
 
-    <div class="untree_co-section">
+    <div class="untree_co-section" id="blog-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-lg-7 text-center mx-auto">
@@ -653,7 +663,10 @@
       </div>
     </div>
 
+    <div class="ajax"></div>
+
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -672,6 +685,64 @@
 
 
     <script src="js/custom.js"></script>
+
+    <!-- <script>
+      
+      $(document).ready(function() {
+        $.ajax({
+      url: 'https://www.tistory.com/apis/post/list?access_token=b1d75e5825bb98791fa25f6d6cc194ae_e93c7ae5461040dd69fd7ee9c365a22b&output=json&blogName=geumji&page=1',
+      type: 'get',
+      dataType: 'json',
+      success: function(result) {
+        // JSON 데이터에서 한글 디코딩
+        var decodedResult = JSON.parse(decodeURIComponent(JSON.stringify(result)));
+
+        console.log(decodedResult);
+      },
+      error: function(xhr, status, error) {
+        console.log(error);
+      }
+    })
+  });
+    </script> -->
+
+
+
+ <ul id="blog-posts"></ul>
+
+    <script>
+        $(document).ready(function() {
+            var apiKey = 'b1d75e5825bb98791fa25f6d6cc194ae_e93c7ae5461040dd69fd7ee9c365a22b'; // Tistory API 키를 입력하세요
+            var blogName = 'geumji'; // 블로그 이름을 입력하세요
+            var page = 1; // 페이지 번호를 조정하세요
+
+            var apiUrl = 'https://www.tistory.com/apis/post/list?access_token=b1d75e5825bb98791fa25f6d6cc194ae_e93c7ae5461040dd69fd7ee9c365a22b&output=json&blogName=geumji&page=1';
+
+            $.ajax({
+                url: apiUrl,
+                type: 'GET',
+                dataType: 'jsonp', // JSONP를 사용해야 CORS 문제를 피할 수 있습니다.
+                success: function(data) {
+                    var posts = data.tistory.item;
+
+                    if (posts && posts.length > 0) {
+                        var blogPosts = $('#blog-posts');
+
+                        posts.forEach(function(post) {
+                            var listItem = $('<li></li>');
+                            listItem.text(post.title);
+                            blogPosts.append(listItem);
+                        });
+                    } else {
+                        console.log('글이 없습니다.');
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error(error);
+                }
+            });
+        });
+    </script>
     
   </body>
 
