@@ -110,18 +110,11 @@
       </div>
     </div>
   </div>
-  <!-- <py-script>
-    GET https://www.tistory.com/apis/post/list?
-    access_token=b1d75e5825bb98791fa25f6d6cc194ae_e93c7ae5461040dd69fd7ee9c365a22b
-    &output=json
-    &blogName=geumji
-    &page=str(i)
-  </py-script>  -->
 
 
 
-<div id="about-section">
-<div class="container">
+  <div id="about-section">
+    <div class="container">
         <div class="row">
           <div class="item web branding gsap-reveal-hero col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
                 <img src="images/person-jej.jpg" class="lazyload  img-fluid" alt="Images" />
@@ -172,13 +165,9 @@
                   (총 113일 / 900시간)
                   
                 </p> 
-                     
               </div>
-              
           </div>
-          
         </div>
-
     </div>
 
 
@@ -462,6 +451,35 @@
     </div>
 -->
 
+
+<div id="json-data">
+  <!-- JSON 데이터를 표시할 곳 -->
+
+</div>
+
+<!-- <script>
+  // JavaScript를 사용하여 GET 요청 보내기
+  function fetchTistoryPosts() {
+      fetch('/') // 서버의 엔드포인트 경로로 변경하세요.
+          .then(response => response.json())
+          .then(data => {
+              // 가져온 JSON 데이터를 HTML에 표시
+              const jsonDataContainer = document.getElementById('json-data');
+              jsonDataContainer.innerHTML = JSON.stringify(data, null, 2);
+
+              console.log(data);
+          })
+          .catch(error => {
+              
+          });
+  }
+
+  // 페이지 로드 시 Tistory 데이터 가져오기
+  window.addEventListener('load', fetchTistoryPosts);
+</script> -->
+
+
+
     <div class="untree_co-section" id="blog-section">
       <div class="container">
         <div class="row mb-5">
@@ -576,14 +594,23 @@
         <div class="row">
           <div class="col-lg-3">
             <div class="widget">
-              <h3>Home</h3>
+              <h3><a href="#home-section" class="text-black">Home</a></h3>
               <ul class="list-unstyled float-left links">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Portfolio</a></li>
               </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Skill</h3>
+              <!-- <ul class="list-unstyled float-left links">
+                <li><a href="#">JAVA/SPRINGBOOT</a></li>
+                <li><a href="#">MYSQL/MYBATIS/ORACLE</a></li>
+                <li><a href="#">CSS/HTML/JS/AJAX</a></li>
+              </ul> -->
             </div> <!-- /.widget -->
           </div> <!-- /.col-lg-3 -->
 
@@ -591,45 +618,38 @@
             <div class="widget">
               <h3>Projects</h3>
               <ul class="list-unstyled float-left links">
-                <li><a href="#">HTML4</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
+                <li><a href="#portfolio-section">JavaProject</a></li>
 
               </ul>
             </div> <!-- /.widget -->
           </div> <!-- /.col-lg-3 -->
 
-          <div class="col-lg-3">
-            <div class="widget">
-              <h3>Services</h3>
-              <ul class="list-unstyled float-left links">
-                <li><a href="#">jQuery</a></li>
-                <li><a href="#">Bootstrap</a></li>
-                <li><a href="#">Freebies</a></li>
-              </ul>
-            </div> <!-- /.widget -->
-          </div> <!-- /.col-lg-3 -->
+          
 
 
           <div class="col-lg-3">
             <div class="widget">
               <h3>Contact</h3>
-              <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+              <!-- <address>43 Raymouth Rd. Baltemoer, London 3910</address> -->
               <ul class="list-unstyled links mb-4">
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                <li><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
+                <li><a href="tel://11234567890">+82 010-2530-0710</a></li>
+                <li><a href="mailto:info@mydomain.com">stdal0330@gmail.com</a></li>
               </ul>
 
               <h3>Connect</h3>
               <ul class="list-unstyled social">
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <!-- <li><a href="#"><span class="icon-instagram"></span></a></li>
                 <li><a href="#"><span class="icon-twitter"></span></a></li>
                 <li><a href="#"><span class="icon-facebook"></span></a></li>
                 <li><a href="#"><span class="icon-linkedin"></span></a></li>
                 <li><a href="#"><span class="icon-pinterest"></span></a></li>
-                <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                <li><a href="#"><span class="icon-dribbble"></span></a></li> -->
+                <li><a href="#"><span class="icon-github" data-toggle="tooltip"data-placement="top"title="github"></span></a></li>
+                <li><a href="#"><span class="icon-tab" data-toggle="tooltip"data-placement="top"title="tistory"></span></a></li>
               </ul>
+
+              
+              <div id="data-container"></div>
 
             </div> <!-- /.widget -->
           </div> <!-- /.col-lg-3 -->
@@ -686,64 +706,9 @@
 
     <script src="js/custom.js"></script>
 
-    <!-- <script>
-      
-      $(document).ready(function() {
-        $.ajax({
-      url: 'https://www.tistory.com/apis/post/list?access_token=b1d75e5825bb98791fa25f6d6cc194ae_e93c7ae5461040dd69fd7ee9c365a22b&output=json&blogName=geumji&page=1',
-      type: 'get',
-      dataType: 'json',
-      success: function(result) {
-        // JSON 데이터에서 한글 디코딩
-        var decodedResult = JSON.parse(decodeURIComponent(JSON.stringify(result)));
-
-        console.log(decodedResult);
-      },
-      error: function(xhr, status, error) {
-        console.log(error);
-      }
-    })
-  });
-    </script> -->
 
 
-
- <ul id="blog-posts"></ul>
-
-    <script>
-        $(document).ready(function() {
-            var apiKey = 'b1d75e5825bb98791fa25f6d6cc194ae_e93c7ae5461040dd69fd7ee9c365a22b'; // Tistory API 키를 입력하세요
-            var blogName = 'geumji'; // 블로그 이름을 입력하세요
-            var page = 1; // 페이지 번호를 조정하세요
-
-            var apiUrl = 'https://www.tistory.com/apis/post/list?access_token=b1d75e5825bb98791fa25f6d6cc194ae_e93c7ae5461040dd69fd7ee9c365a22b&output=json&blogName=geumji&page=1';
-
-            $.ajax({
-                url: apiUrl,
-                type: 'GET',
-                dataType: 'jsonp', // JSONP를 사용해야 CORS 문제를 피할 수 있습니다.
-                success: function(data) {
-                    var posts = data.tistory.item;
-
-                    if (posts && posts.length > 0) {
-                        var blogPosts = $('#blog-posts');
-
-                        posts.forEach(function(post) {
-                            var listItem = $('<li></li>');
-                            listItem.text(post.title);
-                            blogPosts.append(listItem);
-                        });
-                    } else {
-                        console.log('글이 없습니다.');
-                    }
-                },
-                error: function(xhr, status, error) {
-                    console.error(error);
-                }
-            });
-        });
-    </script>
-    
+  
   </body>
 
   </html>
