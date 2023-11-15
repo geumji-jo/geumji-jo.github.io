@@ -103,7 +103,7 @@
                   <img src="images/centermain.gif" alt="Image" class="img-fluid">
                 </figure>
                 <figure class="mb-4">
-                  <img src="images/faq.jpg" alt="Image" class="img-fluid">
+                  <img src="images/faq.gif" alt="Image" class="img-fluid">
                 </figure>
                 <figure class="mb-4">
                   <img src="images/notice.gif" alt="Image" class="img-fluid">
@@ -139,12 +139,18 @@
                     <span class="detail-val">4 PERSON</span>
                   </div>
                 </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
+                  <div class="detail-v1">
+                    <span class="detail-label">project erd</span>
+                    <span class="detail-val"><a href="/GitHub/geumji-jo.github.io/images/erdcloud.png">ERD</a></span>
+                  </div>
+                </div>
               </div>
             </div>
             
             <div class="col-md-6">
               <hr>
-              <p style="font-weight: bold; font-size: large;">프로젝트개요</p>
+              <p style="font-weight: bold; font-size: large;">프로젝트 개요</p>
               <hr>
               <p>제목 : FULL POWER SALAD(Spring MVC) - 배포중</p>
               <p>기간 : 2023-06-01 ~ 2023-06-27</p>
@@ -223,10 +229,14 @@
               <br>
               pagination을 각 게시판 적용하였을 때 session에 올라간 recordPerPage값이 리셋되도록 하였습니다.
               <br>
+              게시판 제목,내용을 검색할 수 있게 하였습니다.
+              <br>
               <br>
               <strong>자주묻는질문</strong>
               <br>
               아코디언 형식의 mvc-model2 패턴 게시판입니다.
+              <br>
+              관리자로 로그인 시 자주묻는 질문 create,delete,update 가능합니다.
               <br>
               고객센터 홈에서 드래그 형태의 게시판으로 간단하게 확인가능합니다
               <br>
@@ -236,7 +246,9 @@
               <br>
               mapper에서 카테고리별 게시글의 갯수가 카운트 되도록 하였습니다.
               <br>
-              자주묻는질문 글 클릭시 jQuery를 이용하여 바로 아래 답변 확인 가능하도록 하였습니다.
+              자주묻는질문 글 클릭시 jQuery를 이용하여 
+              <br>
+              아코디언 형식으로 바로 아래 답변 확인 가능하도록 하였습니다.
             
               <br>
               <br>
@@ -295,6 +307,33 @@
               <p><strong>Database</strong> MYSQL</p>
               <p><strong>WAS</strong> Apache Tomcat9</p>
               <p><strong>TOOL</strong> Spring-Tool-Suite4</p>
+              <br>
+              <hr>
+              <p style="font-weight: bold; font-size: large;">프로젝트 후기</p>
+              <hr>
+
+              이번 프로젝트를 경험하며 여러 가지 발전된 부분이 있다고 느꼈습니다.
+              <br>
+              <br>
+              1.<strong>다양한 응용 방법</strong>: MVC-Model2 패턴을 활용한 게시판이라도, 어떤 형태와 상황에서 사용하는지에 따라 응용 방법이 다양하다는 것을 깨달았습니다.
+              예를 들어, 문의 글 게시판은 관리자와 1대1로 문의하는 방법으로 접근합니다. 
+              그래서 필수적으로 로그인한 사용자만 글을 작성할 수 있도록 하였고, 
+              이런 부분이 상황과 구상에 따라 게시판마다 성격이 달라질수 있음을 느꼈습니다.
+              여러 가지 성격의 게시판을 개발하면서 MVC 패턴을 더 깊이 체화시킬 수 있었습니다.
+              <br>
+              <br>
+              2. <strong>Thymeleaf의 편리함</strong>: Thymeleaf는 처음에는 어려웠지만, 사용할수록 FRONT-END 부분을 처리하기가 훨씬 편해진다는 것을 깨달았습니다. 특히 `th:block`과 `th:if="${not #lists.isEmpty(noticeList)}"`와 같은 Thymeleaf 문법을 활용하여 코드를 더 간결하게 작성할 수 있다는 것을 알게 되었습니다.
+              <br>
+              <br>
+              3. <strong>밸런스의 중요성</strong>: FRONT-END와 BACK-END의 밸런스를 잘 조절해야만 프로젝트를 기한 내에 성공적으로 완료할 수 있다는 것을 깨달았습니다. 세미프로젝트때에는 완성도를 높이기 위해 FRONT-END에도 신경을 썼는데 그부분이 프로젝트의 완성도를 오히려 낮춘것같아 파이널프로젝트때는 이부분을 방영해서 최대한 BACK-END부분에 집중하도록 하였습니다.
+              <br>
+              <br>
+              4. <strong>소통과 협력</strong>: 개발 뿐만 아니라 팀 멤버들과의 소통과 협력 또한 프로젝트의 핵심이라고 많이 느꼈습니다. 함께 발을 맞추어 가는 것이 중요하다는 것을 깨달았습니다.
+              <br>
+              <br>
+              이러한 경험들과 깨달음은 다음 프로젝트에 적극 활용하여 더 나은 성과를 이루어내기 위한 중요한 기반이 될 것으로 생각됩니다.
+
+              
             </div>
           </div>
 
