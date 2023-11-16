@@ -85,7 +85,7 @@
             </ul>
           </li> 
           <li><a href="#contact-section" class="nav-link">Contact us</a></li>-->
-          <!-- <li><a href="#blog-section" class="nav-link">Blog</a></li> -->
+          <li><a href="#blog-section" class="nav-link">Posts</a></li>
         </ul>
 
         <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block" data-toggle="collapse" data-target="#main-navbar">
@@ -129,8 +129,8 @@
                 <h1 class="gsap-reveal-hero mb-3 font-size-lg"><strong>About<span class="text-primary">.</span> Me</strong></h1>
                 <div class="gsap-reveal-hero">
                   <h3 class="text-black">"배움을 무서워하지 않고<br> 발전하는 개발자가 되겠습니다."</h3>
-                  <!-- <h6 class="text-black"> 새로운 지식과 많은 경험을 받아 드릴 수 있는,</h5>
-                  <h6 class="text-black"> 성장하는 개발자가 되겠습니다.</h5> -->
+                  <!-- <h6 class="text-black"> 늦게 시작한 만큼</h5>
+                  <h6 class="text-black"> 더욱 열심히 하는 개발자가 되겠습니다.</h5> -->
                 </div>
                 <br>
                 <p class="gsap-reveal-hero">
@@ -166,12 +166,6 @@
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   (총 113일 / 900시간)
                 </p> 
-                <p class="gsap-reveal-hero">
-                  <strong>Go to</strong>
-                  <a href="https://github.com/geumji-jo/FinalProject">GitHub </a><span>/</span>
-                  <a href="https://geumji.tistory.com/">Tistory</a>
-                </p> 
-                
               </div>
           </div>
         </div>
@@ -459,40 +453,13 @@
 -->
 
 
-<div id="json-data">
-  <!-- JSON 데이터를 표시할 곳 -->
 
-</div>
-
-<!-- <script>
-  // JavaScript를 사용하여 GET 요청 보내기
-  function fetchTistoryPosts() {
-      fetch('/') // 서버의 엔드포인트 경로로 변경하세요.
-          .then(response => response.json())
-          .then(data => {
-              // 가져온 JSON 데이터를 HTML에 표시
-              const jsonDataContainer = document.getElementById('json-data');
-              jsonDataContainer.innerHTML = JSON.stringify(data, null, 2);
-
-              console.log(data);
-          })
-          .catch(error => {
-              
-          });
-  }
-
-  // 페이지 로드 시 Tistory 데이터 가져오기
-  window.addEventListener('load', fetchTistoryPosts);
-</script> -->
-
-
-
-    <!-- <div class="untree_co-section" id="blog-section">
+    <div class="untree_co-section" id="blog-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-lg-7 text-center mx-auto">
-            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Blog Posts</strong></h2>
-            <p class="gsap-reveal-hero">News &amp; Updates</p>
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Posts</strong></h2>
+            <p class="gsap-reveal-hero">Tistory &amp; Github</p>
 
             <div class="wave gsap-reveal-hero" >
               <svg>
@@ -501,47 +468,33 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-            <div class="post-entry">
-              <a href="#" class="thumb"><img src="images/gal_1.jpg" alt="image" class="img-fluid"></a>
-              <h3><a href="#">Separated they live in</a></h3>
+            <div class="post-entry text-center">
+              <a href="https://geumji.tistory.com/" class="thumb"><img src="images/tistory.jpg" alt="image" class="img-fluid"></a>
+              <h3><a href="https://geumji.tistory.com/">Tistory</a></h3>
+
               <div class="post-meta">
-                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
+                <a href="https://geumji.tistory.com/">Jul 26, 2023</a>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="post-entry">
-              <a href="#" class="thumb"><img src="images/gal_2.jpg" alt="image" class="img-fluid"></a>
-              <h3><a href="#">Separated they live in</a></h3>
+            <div class="post-entry text-center">
+              <a href="https://github.com/geumji-jo/FinalProject" class="thumb"><img src="images/github.jpg" alt="image" class="img-fluid"></a>
+              <h3><a href="https://github.com/geumji-jo/FinalProject">GitHub </a>
+              </h3>
               <div class="post-meta">
-                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
+                <a href="https://github.com/geumji-jo/FinalProject">Jan 4, 2023</a>
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="post-entry">
-              <a href="#" class="thumb"><img src="images/gal_3.jpg" alt="image" class="img-fluid"></a>
-              <h3><a href="#">Separated they live in</a></h3>
-              <div class="post-meta">
-                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-entry">
-              <a href="#" class="thumb"><img src="images/gal_4.jpg" alt="image" class="img-fluid"></a>
-              <h3><a href="#">Separated they live in</a></h3>
-              <div class="post-meta">
-                Aug 4, 2020 by <a href="#">Admin</a> in <a href="#">Web Design</a>
-              </div>
-            </div>
-          </div>
+          
+          
         </div>
       </div>
     </div>
-     -->
+    
 
     <!-- <div class="untree_co-section" id="contact-section">
       <div class="container">
